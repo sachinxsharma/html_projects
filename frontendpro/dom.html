@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my first webpage</title>
+    <script type="text/javascript">
+            function cyears (form){
+                form.doage.value = form.myage.value * 7
+            }
+    </script>
+
+</head>
+<body>
+    <b> find out ur age in dog years</b>
+    <form method="post">
+        <table>
+            <tr>
+                <td>Enter your age:</td>
+                <td><input type="text" name="myage" size="15">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <input type="button" value="calculate" onclick="cyears(this.form)">
+            </td>
+            </tr>
+            <tr>
+                <td>your age in dog years is </td>
+                <td><input type="text" name="doage" size="15"></td>
+            </tr>
+        </table>
+    </form>
+    
+    
+</body>
+</html>
